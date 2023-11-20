@@ -8,8 +8,7 @@ const Videos = require("./dbModel");
 //app config
 const app = express();
 const port = process.env.PORT || 5000;
-const mongoUrl =
-  "mongodb+srv://Rahmannugar:Nugarcladex@tiktok-clone.yosjejt.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = process.env.MONGOURL
 
 //Middlewares
 app.use(express.json());
